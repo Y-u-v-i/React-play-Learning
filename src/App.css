@@ -1,0 +1,75 @@
+
+.App {
+  text-align: center;
+  margin: 20px;
+}
+
+input {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+#but {
+  color: white;
+  background-color: rgb(56, 56, 193);
+  border-radius: 10px;
+  padding: 10px 15px; 
+  cursor: pointer;
+}
+
+#but:hover {
+  background-color: blue;
+}
+
+input {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-radius: 10px;
+  border-style: dotted;
+}
+
+#span {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgb(42, 159, 231);
+  width: 50%;
+  border-radius: 10px;
+}
+
+ul {
+  margin-left: 28%;
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s; 
+}
+
+li:hover {
+  background-color: rgba(255, 255, 255, 0.1); 
+}
+
+#close {
+  color: white;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+h1{
+  background-color: grey;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: fit-content;
+  height: fit-content;
+  color: white;
+  align-items: center;
+  margin-left: 43%;
+  padding: 10px;
+  border-radius: 10px;
+  border-style: groove;
+}
