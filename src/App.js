@@ -13,7 +13,7 @@ function App() {
   };
 
   const deleteTodo = (index) => {
-    const newTodos = todos.filter((v, i) => i !== index);
+    const newTodos = todos.filter((_, i) => i !== index);
     setTodos(newTodos);
   };
 
@@ -28,6 +28,7 @@ function App() {
   };
 
   return (
+    <>
     <Router>
       <div className="App">
         <Routes>
@@ -36,6 +37,7 @@ function App() {
         </Routes>
       </div>
     </Router>
+    </>
   );
 }
 
