@@ -2,17 +2,26 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../App.css';
 
-function Todo({ addTodo }) {
+function Todo({ addExercise, exercises }) {
   const [inputValue, setInputValue] = useState('');
+  const [matchedExercise, setMatchedExercise] = useState(null);
   const navigate = useNavigate();
 
   const handleInputChange = (e) => {
-    setInputValue(e.target.value);
+    const value = e.target.value;
+    setInputValue(value);
+    const foundExercise = exercises.find(exercise => exercise.exerciseName.toLowerCase() === value.toLowerCase());
+    setMatchedExercise(foundExercise || null);
   };
 
-  const handleAddTodo = () => {
-    if (inputValue.trim() !== '') {
-      addTodo(inputValue);
+  const handleAddExercise = () => {
+    if (inputValue.trim() !== '' && !matchedExercise) {
+      const newExercise = {
+        exerciseName: inputValue,
+        path: `/${inputValue.toLowerCase().replace(/\s+/g, '-')}`,
+        image: 'https://static.vecteezy.com/system/resources/previews/026/162/009/original/to-do-list-icon-with-hand-drawn-text-checklist-task-list-illustration-in-flat-style-on-white-background-vector.jpg'
+      };
+      addExercise(newExercise);
       setInputValue('');
       navigate('/'); 
     }
@@ -25,9 +34,17 @@ function Todo({ addTodo }) {
         type="text"
         value={inputValue}
         onChange={handleInputChange}
-        placeholder="Add a new task"
+        placeholder="Add a new exercise"
       />
-      <button id='but' onClick={handleAddTodo}>Add</button>
+      <button className='but' onClick={handleAddExercise}>Add</button>
+
+      {matchedExercise && (
+        <div className="matched-exercise">
+          <h2>Matched Exercise:</h2>
+          <img src={matchedExercise.image} alt={matchedExercise.exerciseName} />
+          <h3>{matchedExercise.exerciseName}</h3>
+        </div>
+      )}
     </div>
   );
 }

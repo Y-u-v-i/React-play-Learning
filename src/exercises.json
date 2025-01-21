@@ -1,0 +1,32 @@
+[
+    {
+      "exerciseName": "Push Up",
+      "path": "/push-up",
+      "image": "https://static.vecteezy.com/system/resources/previews/002/204/285/large_2x/a-man-is-doing-a-push-up-hand-drawn-style-design-illustrations-vector.jpg"
+    },
+    {
+      "exerciseName": "Squat",
+      "path": "/squat",
+      "image": "https://d2kyii27apbbaa.cloudfront.net/9c9e441108351ae82aecc1b338637a87.png"
+    },
+    {
+      "exerciseName": "Lunge",
+      "path": "/lunge",
+      "image": "https://static.vecteezy.com/system/resources/previews/005/580/040/original/woman-doing-front-and-back-lunges-exercise-flat-illustration-isolated-on-white-background-free-vector.jpg"
+    },
+    {
+      "exerciseName": "Swim",
+      "path": "/swim",
+      "image": "https://static.vecteezy.com/system/resources/previews/000/526/438/original/a-kid-swimming-vector.jpg"
+    },
+    {
+      "exerciseName":"Editing",
+      "path":"/edit",
+      "image":"https://images.ctfassets.net/lzny33ho1g45/317bZQRbbJ8R4HIWpgwbpd/dc62190ab80cf95b3dc3a06ba08b670a/best-photo-editing-apps-iphone-android.jpg"
+    },
+    {
+      "exerciseName":"Watch a Movie",
+      "path":"/movies",
+      "image":"https://learn.g2.com/hubfs/iStock-1078740886.jpg"
+    }
+  ]
