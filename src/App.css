@@ -9,7 +9,7 @@ input {
   margin-right: 10px;
 }
 
-#but {
+.but {
   color: white;
   background-color: rgb(56, 56, 193);
   border-radius: 10px;
@@ -17,7 +17,7 @@ input {
   cursor: pointer;
 }
 
-#but:hover {
+.but:hover {
   background-color: blue;
 }
 
@@ -27,14 +27,14 @@ input {
   border-style: dotted;
 }
 
-#span {
+/*#span {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: rgb(42, 159, 231);
   width: 50%;
   border-radius: 10px;
-}
+}*/
 
-ul {
+/*ul {
   margin-left: 28%;
   list-style-type: none;
   padding: 0;
@@ -52,14 +52,20 @@ li {
 
 li:hover {
   background-color: rgba(255, 255, 255, 0.1); 
-}
+}*/
 
-#close {
+.close-button {
   color: white;
-  padding: 0;
-  background: none;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background-color: red;
   border: none;
+  border-radius: 10px;
   cursor: pointer;
+  margin-bottom: 10px;
+  margin-left: 180px;
 }
 h1{
   background-color: grey;
@@ -73,21 +79,22 @@ h1{
   border-radius: 10px;
   border-style: groove;
 }
-#link{
+.link{
   background-color: chocolate;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: white;
   padding: 5px;
   border-radius: 10px;
   border-color: black;
   border-style: inherit;
   text-decoration: none;
-  margin-left: 40px;
+  margin-left: 8px;
 }
-#link:active{
+.link:active{
   background-color: burlywood;
   color:black;
 }
-#space{
+/*#space{
   margin-top: 23%;
   margin-left: 38%;
   background: rgb(63,94,251);
@@ -109,11 +116,11 @@ h1{
   padding-top: 5px;
   padding-bottom: 5px;
   cursor: pointer;
-}
+}*/
 body{
   background-color: rgb(233, 227, 227);
 }
-#button:hover{
+/*#button:hover{
   color: white;
 }
 #active{
@@ -126,4 +133,40 @@ body{
   padding-top: 5px;
   padding-bottom: 5px;
   cursor: pointer;
+}*/
+.exercise-cards {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.exercise-card {
+  border: 5px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 10px;
+  text-align: center;
+  width: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.exercise-card img {
+  max-width: 100%;
+  height: 250px;
+  border-radius: 4px;
+}
+.exercise-card:hover{
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+}
+.matched-exercise {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.matched-exercise img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 4px;
 }
