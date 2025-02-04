@@ -1,0 +1,105 @@
+.log{
+  background-color: rgb(146, 93, 195);
+  color: white;
+  border-radius: 10px;
+  border-color: black;
+  border-style: groove;
+  height: 50%;
+  width: 25%;
+  margin-left: 38%;
+  margin-top: 15%;
+  padding: 10px;
+  align-items: center;
+}
+.inner{
+  margin-left: 50px;
+}
+input{
+  border-color: black;
+  border-style: groove;
+  width: max-content;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  height: 20px;
+}
+.next{
+  border-radius: 5px;
+  border-color: black;
+  background-color: palevioletred;
+  border-style: double;
+  margin-left: 60px;
+  margin-top: 20px;
+  padding: 5px;
+  cursor: pointer;
+}
+.para{
+  margin-left: 50px;
+}
+.prev{
+  border-radius: 5px;
+  border-color: black;
+  background-color: palevioletred;
+  border-style: double;
+  margin-left: 20px;
+  margin-top: 20px;
+  padding: 5px;
+  cursor: pointer;
+}
+.sign{
+  text-decoration: none;
+  border-radius: 5px;
+  border-color: black;
+  background-color: palevioletred;
+  border-style:groove;
+  padding-left: 3px;
+  padding-top: 3px;
+  padding-bottom:3px;
+  padding-right: 3px;
+  color: black;
+  cursor: pointer;
+}
+.end{
+  border-radius: 5px;
+  border-color: black;
+  background-color: palevioletred;
+  border-style: double;
+  margin-left: 130px;
+  margin-top: 20px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+
+.dashboard {
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom:0; 
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar {
+  list-style-type: none;
+  padding: 0; 
+  display: flex; 
+}
+
+.navbar li {
+  margin-right: 20px; 
+}
+
+.list {
+  text-decoration: none; 
+  color: #333;
+  padding: 10px 15px; 
+  border-radius: 5px; 
+  transition: background-color 0.3s; 
+}
+
+.list:hover {
+  background-color: #f0f0f0; 
+}
