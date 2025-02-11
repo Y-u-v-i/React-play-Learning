@@ -1,14 +1,14 @@
 {
-  "name": "login",
+  "name": "to_do_list",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@tailwindcss/cli": "^4.0.3",
     "cra-template": "1.2.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-router-dom": "^7.1.5",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^4.2.4"
+    "react-router-dom": "^7.1.1",
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -33,5 +33,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.3",
+    "autoprefixer": "^10.4.20",
+    "craco": "^0.0.3",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^3.4.17",
+    "web-vitals": "^4.2.4"
   }
 }
